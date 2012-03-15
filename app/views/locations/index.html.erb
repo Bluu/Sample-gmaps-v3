@@ -27,7 +27,11 @@
 <br />
 
 <%= link_to 'New Location', new_location_path %>
-
+<br />
+<br />
+<%= link_to 'APPLET TO LOAD LOCATIONS', "http://netsermap.herokuapp.com/applet.html" %>
+<br />
+<br />
 <%= gmaps({
 	"map_options" => { "auto_adjust" => true },
 	"markers" => { "data" => @json, "options" => {"do_clustering" => true }},
